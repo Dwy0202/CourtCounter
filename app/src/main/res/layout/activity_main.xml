@@ -23,14 +23,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:layout_weight="1"
-                android:text="Team A"
-                android:textColor="@color/white"
-                android:textSize="32sp" />
+                style="@style/TeamName"
+                android:text="Team A" />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -44,79 +38,33 @@
 
             <Button
                 android:id="@+id/Team_A_TouchDown_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="@string/TouchDown"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="@string/TouchDown" />
 
             <Button
                 android:id="@+id/Team_A_ExtraPoint_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="Extra Point"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="Extra Point" />
 
             <Button
                 android:id="@+id/Team_A_TwoConversion_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="2-PT Conversion"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="2-PT Conversion" />
 
             <Button
                 android:id="@+id/Team_A_FieldGoal_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="Field Goal"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="Field Goal" />
 
             <Button
                 android:id="@+id/Team_A_Safety_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="Safety"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="Safety" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="24dp"
+                style="@style/UndoButton"
                 android:onClick="undoAScore"
-                android:text="Undo Last Score"
-                android:textSize="16sp" />
+                android:text="Undo Last Score"/>
 
 
         </LinearLayout>
@@ -136,14 +84,8 @@
 
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:layout_weight="1"
-                android:text="Team B"
-                android:textColor="@color/white"
-                android:textSize="32sp" />
+                style="@style/TeamName"
+                android:text="Team B" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -157,79 +99,33 @@
 
             <Button
                 android:id="@+id/Team_B_TouchDown_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="@string/TouchDown"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="@string/TouchDown" />
 
             <Button
                 android:id="@+id/Team_B_ExtraPoint_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="Extra Point"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="Extra Point" />
 
             <Button
                 android:id="@+id/Team_B_TwoConversion_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="2-PT Conversion"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="2-PT Conversion" />
 
             <Button
                 android:id="@+id/Team_B_FieldGoal_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="Field Goal"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="Field Goal" />
 
             <Button
                 android:id="@+id/Team_B_Safety_Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
-                android:onClick="addPoints"
-                android:text="Safety"
-                android:textSize="16sp" />
+                style="@style/ScoreButton"
+                android:text="Safety" />
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="24dp"
+                style="@style/UndoButton"
                 android:onClick="undoBScore"
-                android:text="Undo Last Score"
-                android:textSize="16sp" />
+                android:text="Undo Last Score"/>
 
 
         </LinearLayout>
@@ -245,7 +141,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="16dp"
         android:onClick="resetScore"
-        android:text="Reset Both Score's"
+        android:text="Reset Team's Score"
         android:textSize="16sp" />
 
 
