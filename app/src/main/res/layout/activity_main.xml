@@ -24,7 +24,7 @@
 
             <TextView
                 style="@style/TeamName"
-                android:text="Team A" />
+                android:text="@string/TeamA" />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -44,27 +44,27 @@
             <Button
                 android:id="@+id/Team_A_ExtraPoint_Button"
                 style="@style/ScoreButton"
-                android:text="Extra Point" />
+                android:text="@string/ExtraPoint" />
 
             <Button
                 android:id="@+id/Team_A_TwoConversion_Button"
                 style="@style/ScoreButton"
-                android:text="2-PT Conversion" />
+                android:text="@string/TwoPoint" />
 
             <Button
                 android:id="@+id/Team_A_FieldGoal_Button"
                 style="@style/ScoreButton"
-                android:text="Field Goal" />
+                android:text="@string/FieldGoal" />
 
             <Button
                 android:id="@+id/Team_A_Safety_Button"
                 style="@style/ScoreButton"
-                android:text="Safety" />
+                android:text="@string/Safety" />
 
             <Button
                 style="@style/UndoButton"
                 android:onClick="undoAScore"
-                android:text="Undo Last Score"/>
+                android:text="@string/UndoScore"/>
 
 
         </LinearLayout>
@@ -85,7 +85,7 @@
 
             <TextView
                 style="@style/TeamName"
-                android:text="Team B" />
+                android:text="@string/TeamB" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -105,27 +105,27 @@
             <Button
                 android:id="@+id/Team_B_ExtraPoint_Button"
                 style="@style/ScoreButton"
-                android:text="Extra Point" />
+                android:text="@string/ExtraPoint" />
 
             <Button
                 android:id="@+id/Team_B_TwoConversion_Button"
                 style="@style/ScoreButton"
-                android:text="2-PT Conversion" />
+                android:text="@string/TwoPoint" />
 
             <Button
                 android:id="@+id/Team_B_FieldGoal_Button"
                 style="@style/ScoreButton"
-                android:text="Field Goal" />
+                android:text="@string/FieldGoal" />
 
             <Button
                 android:id="@+id/Team_B_Safety_Button"
                 style="@style/ScoreButton"
-                android:text="Safety" />
+                android:text="@string/Safety" />
 
             <Button
                 style="@style/UndoButton"
                 android:onClick="undoBScore"
-                android:text="Undo Last Score"/>
+                android:text="@string/UndoScore"/>
 
 
         </LinearLayout>
@@ -134,15 +134,9 @@
 
 
     <Button
-        android:id="@+id/reset_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="16dp"
+        style="@style/ResetScores"
         android:onClick="resetScore"
-        android:text="Reset Team's Score"
-        android:textSize="16sp" />
+        android:text="@string/ResetScore" />
 
 
 </RelativeLayout>
