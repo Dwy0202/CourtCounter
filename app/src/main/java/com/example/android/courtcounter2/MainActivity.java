@@ -10,20 +10,12 @@ import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
     //Creating two Stacks to record point value assignment using FILO for undo
     Stack<Integer> teamAScoreStack = new Stack<Integer>();
     Stack<Integer> teamBScoreStack = new Stack<Integer>();
-
     //Team score's starting at 0 points.
     int teamA_Score = 0;
     int teamB_Score = 0;
-
     //Possible Point value's
     int touchDown = 6;
     int extraPoint = 1;
@@ -31,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     int fieldGoal = 3;
     int safety = 2;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
 
     /*
     This method will add points to Team A or Team B
@@ -171,7 +168,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     //  Displays the given score for Team A.
-
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
@@ -180,7 +176,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     // Displays the given score for Team B.
-
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
