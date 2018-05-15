@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/background" />
+        android:src="@drawable/background" />
 
 
     <LinearLayout
@@ -64,7 +64,7 @@
             <Button
                 style="@style/UndoButton"
                 android:onClick="undoAScore"
-                android:text="@string/UndoScore"/>
+                android:text="@string/UndoScore" />
 
 
         </LinearLayout>
@@ -125,7 +125,7 @@
             <Button
                 style="@style/UndoButton"
                 android:onClick="undoBScore"
-                android:text="@string/UndoScore"/>
+                android:text="@string/UndoScore" />
 
 
         </LinearLayout>
